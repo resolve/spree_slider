@@ -27,7 +27,7 @@
       <td class="align-center"><%= image_tag slide.slide_image, style: 'width: 120px; height: auto;' %></td>
       <td><%= link_to slide.name, object_url(slide) %></td>
       <td><%= link_to slide.product.name, object_url(slide) unless slide.product_id.blank? %></td>
-      <td><%= slide.published ? t(:say_yes) : t(:say_no) %></td>
+      <td><%= slide.published ? t(:yes) : t(:no) %></td>
       <td data-hook="admin_slides_index_row_actions" class="actions">
         <%= link_to_edit slide, :no_text => true, :class => 'edit' %>
         &nbsp;
